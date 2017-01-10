@@ -29,6 +29,7 @@ Angular has many built-in services, but it's very common for developers to creat
 
 - Make `$http` calls to an external API from within a controller.
 - Update the view with data from the `$http` calls.
+- Use `$q` to set up a deferred task that can be resolved or rejected. 
 
 
 ### Controllers Review
