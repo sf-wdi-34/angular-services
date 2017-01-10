@@ -125,7 +125,7 @@ This is a big change, but it's a best practice.
   }
   ```
 
-**Note**: You might also see an alternative "factory" syntax for creating services. This syntax just sets up a "factory" function to create a service instance.
+**Note**: A "service" is just one type of Angular "provider."  You might also see a related "factory" syntax that sets up a "factory" function to create a service instance.  These two syntax options have very similar behavior in most cases. See Angular's [provider documentation](https://docs.angularjs.org/guide/providers) for more information.
 
 <details><summary>click for factory syntax example</summary>
 ```js
