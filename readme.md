@@ -117,7 +117,7 @@ This is a big change, but it's a best practice.
 
   ```js
   ReceiptController.$inject=['ReceiptService'];
-  function ReceiptController( ReceiptService) {
+  function ReceiptController( ReceiptService ) {
     var vm = this;
     vm.items = ReceiptService.queryAllItems();
     vm.total = ReceiptService.calculateTotal();
