@@ -102,9 +102,11 @@ This is a big change, but it's a best practice.
     }
     // ... functions to add and remove items... then other utility functions:
     self.calculateTotal = function(){
-      return self.items.reduce(function(previousItem, currentItem){
-        return previousItem.price + currentItem.price;
-      });
+      var sum = 0;
+      for (var i=0; i< self.items.length; i++){
+        sum += self.items[i].price;
+      }
+      return sum;
     };
     self.discountItem = function(item, percentOff){
       var discountMultiplier = (100-percentOff)/100;
