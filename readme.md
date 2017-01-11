@@ -224,8 +224,6 @@ function BookService(   $http,   $q ) {
       url: 'https://super-crud.herokuapp.com/books/'+bookId
     }).then(onBookShowSuccess, onError);
 
-    return deferred.promise;
-
     // note how these functions are defined within the body of another function?
     // that gives them access to variables from that function
     // - see lexical scope & closures https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
@@ -243,6 +241,8 @@ function BookService(   $http,   $q ) {
       // server error - reject the deferred and choose what to send to the controller
       deferred.reject(self.book);
     }
+   
+    return deferred.promise;
   }
 }
 ```
